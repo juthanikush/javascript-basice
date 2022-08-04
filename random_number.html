@@ -1,0 +1,14 @@
+<script>
+    function randomFrame()
+    {
+        //return Math.random();
+        return Math.floor(Math.random()*10);
+    }
+    console.log(randomFrame());
+
+    function randomRange(myMin,MyMax){
+        return Math.floor(Math.random() * (MyMax-myMin+1))+myMin;
+    }
+    var myRandom=randomRange(5,15)
+    console.log(myRandom);
+</script>

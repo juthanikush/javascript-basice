@@ -1,0 +1,39 @@
+<script>
+    //simple function
+    function SimpleFunction() {
+        console.log("Simple function Calling");
+    }
+    SimpleFunction()
+
+    //passing variable in function
+    function passvariable(a,b){
+        console.log(a-b)
+    }
+    passvariable(7,5);
+
+//global keyword a in this function we don't want to write var,let,const keyword in this
+    function fun1()
+    {
+      a = 10;
+    }
+    fun1()
+    console.log(a);
+
+    //return number
+    function fun2(num)
+    {
+        return num-2;
+    }
+    console.log(fun2(10))
+
+
+    //single line
+    function nextLine(arr,item){
+        arr.push(item)
+        return arr.shift();
+    }
+    var testArr=[1,2,3,4,5]
+    console.log("Before : "+JSON.stringify(testArr));
+    console.log(nextLine(testArr,6))
+    console.log("After : "+JSON.stringify(testArr));
+</script>
